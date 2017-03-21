@@ -1,0 +1,131 @@
+@font-face {
+    font-family: 'open_sansregular';
+    src: url('fonts/OpenSans-Regular-webfont.eot');
+    src: url('fonts/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'),
+         url('fonts/OpenSans-Regular-webfont.woff') format('woff'),
+         url('fonts/OpenSans-Regular-webfont.ttf') format('truetype'),
+         url('fonts/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+* /* Police de la page */
+{
+	font-family: arial, verdana, sans-serif;
+}
+
+body /* Image de fond */
+{
+	background-image: url(images/image_de_fond.png); 
+}
+
+#bloc_page
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+#bordure /* liseré */
+{
+    border-radius: 10px 10px 10px 10px;
+    background-image: url(images/bordure.png);
+    padding: 65px; /* marge intérieure afin de faire apparaitre le liseré même sans texte */
+}
+
+header
+{
+    position: relative; /* header en position relative sans précisions fin de placer la photo en position absolue dans le header */
+}
+
+#titres
+{
+    display: flex;
+    flex-direction: column;
+}
+
+h1  /* Titre du CV*/
+{
+    text-align: center; 
+    font-weight: bold; 
+    font-family: 'open_sansregular', arial, verdana, sans-serif;
+    font-size: 3em;
+}
+
+.soustitre /* sous-titre centré */
+{
+	text-align: center;
+}
+
+.photo
+{
+    float: right;
+    position: absolute; /* position de la photo sur la droite dans le header */
+    right: 0px;
+    top: 1px;
+    border: 1px solid black;
+    box-shadow: 1px 1px 1px black;
+    height: 138px /*hauteur définie en pixels sinon la bordure inférieure est plus basse que le bas de la photo */
+}
+
+#contenu_CV
+{
+    display: flex;
+}
+
+section
+{
+    width: 70%;
+    height: 90%;
+    text-align: left;
+}
+
+section h2
+{
+    text-align: center;
+    color: maroon;
+}
+
+h2  /*style des titres des rubriques du CV */
+{
+     text-decoration: underline;
+     font-family: 'open_sansregular', arial, verdana, sans-serif;
+}
+
+.entreprise
+{
+	color: teal;
+    font-weight: bold;
+}
+
+.poste
+{
+    font-weight: bold;
+}
+
+.competences
+{
+	color: maroon; 
+    font-style: italic;
+}
+
+/* Nouvelles règles si la fenêtre fait au plus 1024px de large */
+@media screen and (max-width: 1024px)
+{
+    #bordure
+    {
+        display: none;
+    }
+
+    #contenu_CV
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    section
+    {
+        width: auto;
+    }
+
+}
