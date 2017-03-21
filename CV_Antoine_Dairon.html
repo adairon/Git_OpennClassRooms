@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8" />
+        <link rel="stylesheet" href="style.css" />
+        <title>Antoine DAIRON</title>
+    </head>
+
+    <body>
+        
+        <div id="bloc_page"> <!-- balise div pour bordure + CV pour mise en page avec flexbox -->
+
+            <div id="bordure"></div>
+
+            <div id="CV"> <!-- balise div pour CV + header -->
+
+                <header> <!-- titre, sous titre et photo -->
+                    <div id="titres">
+                    	<h1>Antoine DAIRON</h1>
+                        <p class="soustitre">Spécialiste de la formation et passionné de technologie en reconversion professionnelle.</p>
+                    </div>
+                    <figure>
+                        <a href="images/Portrait_AD.jpg" class="photo">
+                            <img src="images/Micro_portrait_AD.jpg" alt="Photographie de Antoine DAIRON" title="Cliquez pour agrandir" />
+                        </a>
+                    </figure>
+                </header>
+
+                <div id="contenu_CV"> <!-- balise div pour tout le contenu du CV pour le mettre en page avec flexbox -->
+
+                    <section id="experience"><!-- Liste de mes expériences professionnelles par ordre antéchronologique -->
+                        <article>
+                            <h2>Mon expérience</h2>
+                        <!-- Balises span utilisées pour qu'un style css s'applique à chaque classe -->
+                            <ul>
+                                <li><strong>Nov 2016 -> Mars 2017 : </strong><span class="entreprise">Groupe BIZNESS</span> (Toulouse) - <span class="poste">RESPONSABLE ORGANISATION ET COORDINATION PÉDAGOGIQUE</span> : <span class="competences">Gestion de Projet, Recrutement</span> </li>
+                                <li><strong>Sept 2011 -> Nov 2016 : </strong><span class="entreprise">Groupe CIMES</span> (Puteaux) - <span class="poste">RESPONSABLE OPÉRATIONNEL FORMATION</span> : <span class="competences">Gestion et Pilotage de la Formation, Recrutement, Management, Gestion de projet</span></li>
+                                <li><strong>Août 2010 -> Août 2011 : </strong><span class="entreprise">Groupe TOTAL</span> (La Défense) - <span class="poste">GESTIONNAIRE DE PROJET FORMATION</span> : <span class="competences">Gestion de la formation, Poste en anglais</span></li>
+                            </ul>
+                        </article>
+                    </section>
+
+                    <section id="competences"><!-- Liste de mes compétences informatiques et outils utilisés -->
+                        <article>
+                            <h2>Mes compétences</h2>
+                            <ul>
+                                <li>Suite bureautique Microsoft Office (utilisation avancée d'Excel)</li>
+                                <li>Smartsheet (gestion de projet)</li>
+                                <li>Business Object (requêteur de base de données)</li>
+                                <li>Adobe Créative Suite</li>
+                                <li>HTML5 et CSS3 : apprentissage sur le site <a href="https://openclassrooms.com" title="page d'accueil OpenClassrooms">OpenClassrooms</a></li>
+                            </ul>
+                        </article>
+                
+                    </section>
+
+                    <section id="formation"><!-- mon cursus universitaire et formations informatiques suivies -->
+                         <article>  
+                           <h2>Ma formation</h2>
+                            <ul>
+                                <li><strong>2017 : </strong>Apprenez à créer votre site web avec HTML5 et CSS3 - <a href="https://openclassrooms.com" title="page d'accueil OpenClassrooms">OpenClassrooms</a></li>
+                                <li><strong>2008 : </strong>Master 2 IRH : Ingénierie des Ressources Humaines - Université Paris V</li>
+                                <li><strong>2007 : </strong> Maîtrise de Psychologie du Travail et Ergonomie - Université Paris X</li>
+                                <li><strong>2006 : </strong>Licence de Psychologie - Université Paris X</li>
+                            </ul>
+                        </article>
+                    </section>
+
+                </div>      
+
+            </div>
+
+        </div>
+
+    </body>
+
+</html>
